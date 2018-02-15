@@ -7,7 +7,7 @@ const Animals = [
     { name: "Jimmy", species: "fish" }
 ];
 
-let goodBoyes = function(animals) {
+let findDogsForLoop = function(animals) {
     let doggies = [];
 
     for (let i = 0; i < animals.length; i++) {
@@ -19,6 +19,11 @@ let goodBoyes = function(animals) {
     return doggies;
 };
 
-let dogs = goodBoyes(Animals);
+let findDogsFilter = function(animals) {
+    return animals.filter(animal => animal.species === "dog");
+};
+
+// let dogs = findDogsForLoop(Animals);
+let dogs = findDogsFilter(Animals);
 
 console.log(dogs);
