@@ -7,7 +7,7 @@ const Animals = [
     { name: "Jimmy", species: "fish" }
 ];
 
-let dogs = function(animals) {
+let goodBoyes = function(animals) {
     let doggies = [];
 
     for (let i = 0; i < animals.length; i++) {
@@ -19,4 +19,6 @@ let dogs = function(animals) {
     return doggies;
 };
 
-console.log(dogs(Animals));
+let dogs = goodBoyes(Animals);
+
+console.log(dogs);
