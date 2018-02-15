@@ -7,7 +7,7 @@ const Animals = [
     { name: "Jimmy", species: "fish" }
 ];
 
-function findNames(animalia) {
+function findNamesForLoop(animalia) {
     let names = [];
 
     for (let i = 0; i < animalia.length; i++) {
@@ -17,6 +17,13 @@ function findNames(animalia) {
     return names;
 }
 
-let names = findNames(Animals);
+function findNamesArrayMap(animalia) {
+    return animalia.map(leAnimal => leAnimal.name);
+}
 
-console.log(names);
+// letnames = findNamesForLoop(Animals);
+ // let names = findNamesArrayMap(Animals);
+
+console.log(findNamesForLoop(Animals));
+console.log(findNamesArrayMap(Animals));
+// console.log(names);
