@@ -13,6 +13,14 @@ function totalOrdersForLoop(theOrders) {
     return total;
 }
 
-let total = totalOrdersForLoop(Orders);
+function totalOrdersArrayReduce(theOrders) {
+    return theOrders.reduce(function(total, curr) { return total + curr.amount; }, 0);
+}
 
-console.log(total);
+// let total = totalOrdersForLoop(Orders);
+// let total = totalOrdersArrayReduce(Orders);
+
+// console.log(total);
+
+console.log(totalOrdersForLoop(Orders));
+console.log(totalOrdersArrayReduce(Orders));
