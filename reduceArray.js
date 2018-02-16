@@ -14,7 +14,7 @@ function totalOrdersForLoop(theOrders) {
 }
 
 function totalOrdersArrayReduce(theOrders) {
-    return theOrders.reduce(function(total, curr) { return total + curr.amount; }, 0);
+    return theOrders.reduce((total, curr) => total + curr.amount, 0);
 }
 
 // let total = totalOrdersForLoop(Orders);
